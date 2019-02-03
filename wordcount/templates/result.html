@@ -1,4 +1,22 @@
-<h1>총 글자수 : {{total}}}</h1>
+
+<h1>글자 수 세기 프로그램입니다.</h1>
+
+<a href="{%url 'about' %}">ABOUT</a><br>
+<a href="{%url 'home' %}">내용 리셋하기</a>
+<form action="{%url 'result' %}">
+    <textarea name="fulltext" cols="40" rows="10">{{full}}</textarea> 
+    <input type="submit" value="뿅">
+</form>
+
+<p>공백 포함 글자 수 : {{total}}자</p>
+<p>공백 제외 글자 수 : {{none_space}}자</p>
+
+
+
+
+<!-- wordcount 실습내용
+
+<h1>총 글자수 : {{total}}</h1>
 
 <a href="{%url 'home' %}">home</a><br>
 
@@ -11,3 +29,5 @@
 {{word}} : {{howmany}}
 <br>
 {% endfor %}
+
+-->
